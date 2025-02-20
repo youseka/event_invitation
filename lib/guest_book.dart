@@ -29,7 +29,6 @@ class _GuestBookState extends State<GuestBook> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // ...to here.
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Form(
@@ -70,13 +69,11 @@ class _GuestBookState extends State<GuestBook> {
             ),
           ),
         ),
-        // Modify from here...
         const SizedBox(height: 8),
         for (var message in widget.messages)
           Paragraph('${message.name}: ${message.message}'),
         const SizedBox(height: 8),
       ],
-      // ...to here.
     );
   }
 }
